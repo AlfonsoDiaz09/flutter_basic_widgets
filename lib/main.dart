@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter_basic_widgets/src/widgets/custom_text.dart';
 
 void main() {
 
@@ -28,23 +29,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Center(
-        child: Text(
-          'Aprendamos con proyectos de Alfonso en el curso de flutter',
-          style: TextStyle(
-            fontSize: 25.0,
-            color: Colors.white,
-            fontWeight: FontWeight.bold,
-            wordSpacing: 16.0,
-            letterSpacing: 2,
-            backgroundColor: Colors.green,
-          ),
-          maxLines: 2,
-          textAlign: TextAlign.center,
-          overflow: TextOverflow.ellipsis,
-          textScaleFactor: 1.5,
-        ),
-      ),
+      body: CustomText()
     );
   }
 
